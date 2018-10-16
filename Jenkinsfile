@@ -16,7 +16,7 @@ pipeline{
                 
                 // sh 'mvn clean package'
                 //sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
-                sh 'chmod u+x'
+                sh 'chmod u+x Jenkinsfile'
                 sh 'docker image ls -a'
             }
         }
