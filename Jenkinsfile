@@ -16,6 +16,7 @@ pipeline{
                 
                 // sh 'mvn clean package'
                 //sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
+                sh 'whoami'
                 sh 'chmod u+x /Applications/Docker.app/Contents/Resources/bin/docker'
                 sh '/Applications/Docker.app/Contents/Resources/bin/docker image ls -a'
             }
