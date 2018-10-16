@@ -1,7 +1,12 @@
-env.M2_HOME = '/usr/local/Cellar/maven/3.5.4/libexec'
-env.PATH = $PATH:$M2_HOME + '/bin'
+
 pipeline{
+
     agent any
+    environment {
+        M2_HOME = '/usr/local/Cellar/maven/3.5.4/libexec'
+        PATH = "$PATH:$M2_HOME/bin"
+    }
+    
     stages {
         stage('Build'){
             steps{
