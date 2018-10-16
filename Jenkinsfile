@@ -2,8 +2,8 @@
 pipeline{
     agent any
     environment {
-        M2_HOME = '/usr/local/Cellar/maven/3.5.4/libexec'
-        PATH = "$PATH:$M2_HOME/bin"
+        //M2_HOME = '/usr/local/Cellar/maven/3.5.4/libexec'
+        //PATH = "$PATH:$M2_HOME/bin"
         DOCKER_HOME = '/usr/local'
         PATH = "$PATH:$DOCKER_HOME/bin"
 
